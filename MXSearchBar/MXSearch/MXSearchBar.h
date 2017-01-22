@@ -10,5 +10,6 @@
 
 @interface MXSearchBar : UIView
 
+- (void)mx_resignFirstResponder;
 
 @end
