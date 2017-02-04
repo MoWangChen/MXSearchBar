@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "MXSearchBar.h"
+#import "MXSearchResultController.h"
 
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
@@ -18,6 +19,7 @@ NSString *const cellReuseIdentifier = @"cellReuseIdentifier";
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) MXSearchBar *searchBar;
+@property (nonatomic, strong) MXSearchResultController *resultController;
 
 @end
 
@@ -44,6 +46,12 @@ NSString *const cellReuseIdentifier = @"cellReuseIdentifier";
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self.resultController setActive:YES animated:YES];
+}
+
 #pragma mark - lazy load
 - (UITableView *)tableView
 {
@@ -66,6 +74,15 @@ NSString *const cellReuseIdentifier = @"cellReuseIdentifier";
     }
     
     return _searchBar;
+}
+
+- (MXSearchResultController *)resultController
+{
+    if (_resultController == nil) {
+        _resultController = [[MXSearchResultController alloc] initWithSearchBar:self.searchBar contentsController:self];
+    }
+    
+    return _resultController;
 }
 
 @end

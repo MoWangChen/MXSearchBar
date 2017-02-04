@@ -14,6 +14,7 @@
 		DD11C47D1E232E48009634FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD11C47C1E232E48009634FD /* Assets.xcassets */; };
 		DD11C4801E232E48009634FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD11C47E1E232E48009634FD /* LaunchScreen.storyboard */; };
 		DD11C48A1E233364009634FD /* MXSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DD11C4891E233364009634FD /* MXSearchBar.m */; };
+		DD51DA771E4481AF00B3D1D4 /* MXSearchResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD51DA761E4481AF00B3D1D4 /* MXSearchResultController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		DD11C4811E232E48009634FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD11C4881E233364009634FD /* MXSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXSearchBar.h; sourceTree = "<group>"; };
 		DD11C4891E233364009634FD /* MXSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXSearchBar.m; sourceTree = "<group>"; };
+		DD51DA751E4481AF00B3D1D4 /* MXSearchResultController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXSearchResultController.h; sourceTree = "<group>"; };
+		DD51DA761E4481AF00B3D1D4 /* MXSearchResultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXSearchResultController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 			children = (
 				DD11C4881E233364009634FD /* MXSearchBar.h */,
 				DD11C4891E233364009634FD /* MXSearchBar.m */,
+				DD51DA751E4481AF00B3D1D4 /* MXSearchResultController.h */,
+				DD51DA761E4481AF00B3D1D4 /* MXSearchResultController.m */,
 			);
 			path = MXSearch;
 			sourceTree = "<group>";
@@ -165,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD11C48A1E233364009634FD /* MXSearchBar.m in Sources */,
+				DD51DA771E4481AF00B3D1D4 /* MXSearchResultController.m in Sources */,
 				DD11C4781E232E48009634FD /* ViewController.m in Sources */,
 				DD11C4751E232E48009634FD /* AppDelegate.m in Sources */,
 				DD11C4721E232E48009634FD /* main.m in Sources */,
